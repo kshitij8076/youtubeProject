@@ -1,0 +1,46 @@
+.main-div {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    /* display: flex;
+    flex-wrap: wrap ; */
+    background-color: #212121;
+}
+
+.card-container {
+    padding: 20px;
+    cursor: pointer;
+}
+.card {
+   
+    background-color: hsl(0, 0%, 7%)
+}
+
+.card-body a:hover {
+    color: white;
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+}
+
+.card-text {
+    color: rgb(110, 107, 107);
+}
+
+.category-heading {
+    font-size: 2rem;
+    text-transform: capitalize;
+    background-color: #212121;
+    color: #f1f1f1;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid hsla(0, 0%, 53.3%, 0.4);
+}
+
+.category-heading span {
+    color: red;
+}
+
+

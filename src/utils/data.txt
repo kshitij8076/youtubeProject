@@ -1,0 +1,44 @@
+<Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><CodeIcon style={menuIcons}/> <span className='menu'>Coding</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><CodeIcon style={menuIcons}/> <span className='menu'>ReactJs</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><CodeIcon style={menuIcons}/> <span className='menu'>NextJs</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><MusicNoteIcon style={menuIcons}/> <span className='menu'>Music</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><SchoolIcon style={menuIcons}/> <span className='menu'>Education</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><GraphicEqIcon style={menuIcons}/> <span className='menu'>Podcast</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><LiveTvIcon style={menuIcons}/> <span className='menu'>Movie</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><SportsEsportsIcon style={menuIcons}/> <span className='menu'>Gaming</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><GolfCourseRounded style={menuIcons}/> <span className='menu'>Sports</span> </Link>
+        <Link rel="stylesheet" style={{textDecoration:"none"}} to="" ><CheckroomIcon style={menuIcons}/> <span className='menu'>Fashion</span> </Link>
+
+
+   <div className="video-container">
+        <div className="category-heading"><span>{store} </span>Video</div>
+        <div className="card" style={{width: "20rem", height:"18rem", border:"2px solid red"}}>
+          <img src="#" alt="image" />
+            <div className="card-body">
+              <h5 className="card-title">title....</h5>
+              <p className="card-text">description...</p>
+              <a rel="noreferrer" href="#" target = "_blank" className="btn btn-sm btn-primary">Read More....</a>
+            </div>
+        </div>
+      </div>
+
+
+
+
+         <div className="video-main-container">
+      {/* <div className="category-heading"><span>{store} </span>Video</div> */}
+      {videos.map((elements, index) => {
+      return (
+        <div className="video-container" key={index}>
+          <div className="card" style={{width: "20rem", height:"18rem", border:"2px solid red"}}>
+          <img src="#" alt="image" />
+            <div className="card-body">
+              <h5 className="card-title">{elements.snippet.title.slice(0,45)}</h5>
+              <p className="card-text">description...</p>
+              <a rel="noreferrer" href="#" target = "_blank" className="btn btn-sm btn-primary">Read More....</a>
+            </div>
+        </div>
+      </div>
+      )
+    })}
+    </div>
